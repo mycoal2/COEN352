@@ -1,0 +1,57 @@
+<config version="A1 v.4">
+	<test driver="StrInSort" method="main" label="Check output original array">
+		<args>inputs1.txt</args>
+
+		<mark grade="10">
+			<check label="counting integers check"><regex>22 80 89 60 52 19 61 77 15 62 30 80 79 20 81 32 82 13 77 91 54 42 47 91 18 </regex></check>
+		</mark>
+	</test>
+
+	<test driver="StrInSort" method="main" label="Check properly counted runs">
+		<args>inputs1.txt</args>
+
+		<mark grade="10">
+			<check label="counting integers check"><regex>We counted 1 DEC run of length 3</regex></check>
+		</mark>
+	</test>
+
+	<test driver="StrInSort" method="main" label="Check properly counted structuring compares">
+		<args>inputs1.txt</args>
+
+		<mark grade="10">
+			<check label="counting integers check"><regex>We performed 24 compares during structuring</regex></check>
+		</mark>
+	</test>
+
+	<test driver="StrInSort" method="main" label="Check properly counted overall compares">
+		<args>inputs1.txt</args>
+
+		<mark grade="10">
+			<check label="counting integers check"><regex>We performed 192 compares overall</regex></check>
+		</mark>
+	</test>
+
+	<test driver="StrInSort" method="main" label="Check properly counted swaps">
+		<args>inputs1.txt</args>
+
+		<mark grade="20">
+			<check label="counting integers check"><regex>We performed 151 swaps overall</regex></check>
+		</mark>
+	</test>
+
+	<test driver="StrInSort" method="main" label="Check properly counted reversals">
+		<args>inputs1.txt</args>
+
+		<mark grade="10">
+			<check label="counting integers check"><regex>We performed 6 reversals of runs in ASC order</regex></check>
+		</mark>
+	</test>
+
+	<test driver="StrInSort" method="main" label="Check output sorted array">
+		<args>inputs1.txt</args>
+
+		<mark grade="30">
+			<check label="counting integers check"><regex>91 91 89 82 81 80 80 79 77 77 62 61 60 54 52 47 42 32 30 22 20 19 18 15 13 </regex></check>
+		</mark>
+	</test>
+</config>
